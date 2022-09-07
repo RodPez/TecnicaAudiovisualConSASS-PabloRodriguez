@@ -1,0 +1,19 @@
+body{
+	background-color: $colorBody ;
+		&.gridPrincipal{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto auto auto;
+			grid-template-areas: 
+			"header" 
+			"main" 
+			"hr" 
+			"footer";
+		}
+}
+.contenedor{
+	width: 85%;
+	margin: 0 auto;
+}
+
+
