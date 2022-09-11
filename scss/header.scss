@@ -10,15 +10,37 @@ header {
 	position: sticky;
 	top: 0;
 	left: 0;
-	right: 0;		
+	right: 0;
+		&.gridHeader{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			grid-template-areas: 
+			"areaLogo areaNav";
+			@media only screen and (max-width: 768px){
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: auto auto;
+				grid-template-areas: 
+				"areaLogo" 
+				"areaNav";
+			}
+		}		
 }
 
-.gridHeader{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"areaLogo areaNav";
+.contenedor__logo{
+	grid-area: areaLogo;
+	padding: 2rem;
+		& a.logo{
+			letter-spacing: 0.5rem;
+			font-size: 3rem;
+			font-family: Futura-Bold;
+			color: $colorLogo ;
+			text-decoration: none;
+			@media only screen and (max-width: 768px){
+				text-align: center;
+			}
+		}
 }
 
 nav.navegacion{
@@ -35,6 +57,9 @@ nav.navegacion{
 						display: inline-block;
 						font-size: 1.5rem;
 						font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+						@media only screen and (max-width: 768px){
+							font-size: 1.3rem;
+						}
 							& a.elemento__link{
 								display: block;
 								padding: 0.5rem 1rem;
@@ -55,32 +80,6 @@ nav.navegacion{
 					
 			
 
-.contenedor__logo{
-	grid-area: areaLogo;
-	padding: 2rem;
-		& a.logo{
-			letter-spacing: 0.5rem;
-			font-size: 3rem;
-			font-family: Futura-Bold;
-			color: $colorLogo ;
-			text-decoration: none;
-		}
-}
 
 
-@media only screen and (max-width: 768px){
-	.gridHeader{
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: auto auto;
-		grid-template-areas: 
-		"areaLogo" 
-		"areaNav";
-	}
-	.logo{
-		text-align: center;
-	}
-	.lista__elemento{
-		font-size: 1.3rem;
-	}
-}
+
