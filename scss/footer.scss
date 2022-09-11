@@ -16,12 +16,13 @@ footer{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+		& p.textoFooter{
+			grid-area: textoFooter;
+			font-family: Futura-Bold;
+			font-size: 1.85rem;
+		}
 }
-.textoFooter{
-	grid-area: textoFooter;
-	font-family: Futura-Bold;
-	font-size: 1.85rem;
-}
+
 
 				
 .footerLinks{
@@ -29,6 +30,17 @@ footer{
 	flex-direction: row;
 	justify-content:flex-end;
 	align-items: center;
+		& a.contenedor__link{
+			grid-area: linksFooter;
+			width:4rem;
+			height:4rem;
+			padding: 0.4rem;
+				& img.link__imagen{
+					width: 100%;
+					height: 100%;
+					margin: 0;
+				}		
+		}	
 }
 .contenedor__link{
 	grid-area: linksFooter;
@@ -36,14 +48,10 @@ footer{
 	height:4rem;
 	padding: 0.4rem;	
 }	
-.link__imagen{
-			width: 100%;
-			height: 100%;
-			margin: 0;
-}		
+	
 
 @media only screen and (max-width: 768px){
-	.textoFooter{
+	p.textoFooter{
 		font-size: 1.3rem;
 	}
 	.contenedor__link{
