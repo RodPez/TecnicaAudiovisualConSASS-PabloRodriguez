@@ -289,7 +289,10 @@ hr{
 		outline-style: groove;
 		padding: 0;
 		margin-top: 4rem;
-		width: 99%;
+		width: 100%;
+		@media only screen and (max-width: 768px){
+    		width: 99%;
+		}
 	}
 
  
