@@ -80,6 +80,18 @@ main {
  				width: 99%;
  				resize: none;
 			}
+			& input.formBtn{
+  				font-weight: bold;
+  				cursor: pointer;
+  				padding: 0.5rem;
+  				margin: 1rem 1rem 2rem 0;
+  				border: 1px solid #ccc;
+  				background: #eee;
+ 				border-radius: 8px 8px 8px 8px;
+ 				&.formBtn:hover {
+ 			   		background: #ddd;
+				}
+			}
  		}
  		& div.centrar{
 			display: flex;
@@ -115,8 +127,20 @@ main {
 						margin: 0.4rem;
 					}
  				}
- 			}				
- 		}
+ 				&.formBtn{
+  					font-weight: bold;
+  					cursor: pointer;
+  					padding: 0.5rem;
+  					margin: 1rem 1rem 2rem 0;
+  					border: 1px solid #ccc;
+  					background: #eee;
+ 					border-radius: 8px 8px 8px 8px;
+ 					&.formBtn:hover {
+ 			   			background: #ddd;
+					}
+ 				}				
+ 			}
+		}
 	}
 	&.gridMainColumna{
 		display: grid;

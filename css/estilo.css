@@ -78,6 +78,7 @@ header {
               background: lightyellow; }
 
 body {
+  text-colour: #000;
   background-color: #e3e3e0;
   min-height: 100vh; }
   body div.gridPrincipal {
@@ -160,6 +161,16 @@ main {
       main.gridMain div.formulario-reseñas form textarea.estiloTextArea {
         width: 99%;
         resize: none; }
+      main.gridMain div.formulario-reseñas input.formBtn {
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0.5rem;
+        margin: 1rem 1rem 2rem 0;
+        border: 1px solid #ccc;
+        background: #eee;
+        border-radius: 8px 8px 8px 8px; }
+        main.gridMain div.formulario-reseñas input.formBtn.formBtn:hover {
+          background: #ddd; }
     main.gridMain div.centrar {
       display: flex;
       flex-direction: row;
@@ -190,6 +201,16 @@ main {
           @media only screen and (max-width: 768px) {
             main.gridMain div.formulario input.contenedor__input {
               margin: 0.4rem; } }
+        main.gridMain div.formulario input.formBtn {
+          font-weight: bold;
+          cursor: pointer;
+          padding: 0.5rem;
+          margin: 1rem 1rem 2rem 0;
+          border: 1px solid #ccc;
+          background: #eee;
+          border-radius: 8px 8px 8px 8px; }
+          main.gridMain div.formulario input.formBtn.formBtn:hover {
+            background: #ddd; }
   main.gridMainColumna {
     display: grid;
     grid-template-columns: 1fr 1fr;
