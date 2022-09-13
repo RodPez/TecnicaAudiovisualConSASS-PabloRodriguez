@@ -4,7 +4,8 @@ html {
 
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 @font-face {
   font-family: Futura-Bold;
@@ -18,7 +19,7 @@ header {
   align-items: center;
   background-color: lightgoldenrodyellow;
   width: 100%;
-  height: auto;
+  height: 9rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -74,16 +75,17 @@ header {
               background: lightyellow; }
 
 body {
-  background-color: #e3e3e0; }
-  body.gridPrincipal {
+  background-color: #e3e3e0;
+  min-height: 100vh; }
+  body div.gridPrincipal {
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header"  "main"  "hr"  "footer"; }
-
-.contenedor, main.gridMain div.contenedor, main.gridMainColumna div.contenedor, main.gridPortfolio div.contenedor {
-  width: 85%;
-  margin: 0 auto; }
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header"  "main"   "footer"; }
+  body div.contenedor, body main.gridMain div.contenedor, main.gridMain body div.contenedor, body main.gridMainColumna div.contenedor, main.gridMainColumna body div.contenedor, body main.gridPortfolio div.contenedor, main.gridPortfolio body div.contenedor {
+    width: 85%;
+    margin: 0 auto; }
 
 main {
   grid-area: main; }
@@ -91,7 +93,8 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "imagen"  "titulo"  "texto"; }
+    grid-template-areas: "imagen"  "titulo"  "texto";
+    padding-bottom: 8rem; }
     main.gridMain div.contenedor {
       display: flex;
       flex-flow: column nowrap;
@@ -132,7 +135,7 @@ main {
       main.gridMain div.contenedor p.textoCentrado {
         grid-area: texto; }
     main.gridMain div.titulo-reseñas {
-      grid-area: titulo;
+      grid-area: imagen;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -140,7 +143,7 @@ main {
       text-align: center;
       width: 100%; }
     main.gridMain div.formulario-reseñas {
-      grid-area: texto;
+      grid-area: titulo;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -188,7 +191,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "imagenIzq contenido"; }
+    grid-template-areas: "imagenIzq contenido";
+    padding-bottom: 8rem; }
     @media only screen and (max-width: 768px) {
       main.gridMainColumna {
         display: grid;
@@ -240,7 +244,8 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: "tituloPortfolio"  "iframe1"  "iframe2"  "iframe3"  "textoPortfolio"  "verMas"; }
+    grid-template-areas: "tituloPortfolio"  "iframe1"  "iframe2"  "iframe3"  "textoPortfolio"  "verMas";
+    padding-bottom: 8rem; }
     main.gridPortfolio div.contenedor {
       display: flex;
       flex-flow: column nowrap;
@@ -318,21 +323,16 @@ main {
             main.gridPortfolio div.verMas.contenedor a.contenedor__verMas {
               font-size: 1.75rem; } }
 
-hr {
-  grid-area: hr;
-  outline-style: groove;
-  padding: 0;
-  margin-top: 4rem;
-  width: 100%; }
-  @media only screen and (max-width: 768px) {
-    hr {
-      width: 99%; } }
-
 footer {
   grid-area: footer;
   background-color: lightgoldenrodyellow;
   width: 100%;
-  height: 6rem; }
+  height: 7.5rem;
+  border-top: solid 0.5rem #000;
+  margin-top: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
   footer.gridFooter {
     display: grid;
     grid-template-columns: 1fr 1fr;
