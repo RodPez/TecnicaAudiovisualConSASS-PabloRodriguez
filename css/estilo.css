@@ -98,7 +98,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "imagen"  "titulo"  "texto";
-    padding-bottom: 8rem; }
+    padding-bottom: 10rem; }
     main.gridMain div.contenedor {
       display: flex;
       flex-flow: column nowrap;
@@ -166,7 +166,7 @@ main {
         cursor: pointer;
         padding: 0.5rem;
         margin: 1rem 1rem 2rem 0;
-        border: 1px solid #ccc;
+        border: 0.02rem solid #000;
         background: #eee;
         border-radius: 8px 8px 8px 8px; }
         main.gridMain div.formulario-reseñas input.formBtn.formBtn:hover {
@@ -206,7 +206,7 @@ main {
           cursor: pointer;
           padding: 0.5rem;
           margin: 1rem 1rem 2rem 0;
-          border: 1px solid #ccc;
+          border: 0.02rem solid #000;
           background: #eee;
           border-radius: 8px 8px 8px 8px; }
           main.gridMain div.formulario input.formBtn.formBtn:hover {
@@ -216,7 +216,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "imagenIzq contenido";
-    padding-bottom: 8rem; }
+    padding-bottom: 10rem; }
     @media only screen and (max-width: 768px) {
       main.gridMainColumna {
         display: grid;
@@ -269,7 +269,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: "tituloPortfolio"  "iframe1"  "iframe2"  "iframe3"  "textoPortfolio"  "verMas";
-    padding-bottom: 8rem; }
+    padding-bottom: 10rem; }
     main.gridPortfolio div.contenedor {
       display: flex;
       flex-flow: column nowrap;

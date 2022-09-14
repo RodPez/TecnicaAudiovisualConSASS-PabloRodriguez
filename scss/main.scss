@@ -8,7 +8,7 @@ main {
 		"imagen" 
 		"titulo" 
 		"texto";
-		padding-bottom: 8rem;
+		padding-bottom: 10rem;
 		& div.contenedor{
 			@extend .contenedor;
 			display: flex;
@@ -85,11 +85,11 @@ main {
   				cursor: pointer;
   				padding: 0.5rem;
   				margin: 1rem 1rem 2rem 0;
-  				border: 1px solid #ccc;
-  				background: #eee;
+  				border: 0.02rem solid $letrasYBordes;
+  				background: $colorBtnForm;
  				border-radius: 8px 8px 8px 8px;
  				&.formBtn:hover {
- 			   		background: #ddd;
+ 			   		background: $colorBtnFormHover;
 				}
 			}
  		}
@@ -132,11 +132,11 @@ main {
   					cursor: pointer;
   					padding: 0.5rem;
   					margin: 1rem 1rem 2rem 0;
-  					border: 1px solid #ccc;
-  					background: #eee;
+  					border: 0.02rem solid $letrasYBordes;
+  					background: $colorBtnForm;
  					border-radius: 8px 8px 8px 8px;
  					&.formBtn:hover {
- 			   			background: #ddd;
+ 			   			background: $colorBtnFormHover;
 					}
  				}				
  			}
@@ -148,7 +148,7 @@ main {
 		grid-template-rows:auto ;
 		grid-template-areas:
 		"imagenIzq contenido";
-		padding-bottom: 8rem;
+		padding-bottom: 10rem;
 		@media only screen and (max-width: 768px){
 			display: grid;
 			grid-template-columns:1fr ;
@@ -216,7 +216,7 @@ main {
 		"iframe3" 
 		"textoPortfolio" 
 		"verMas";
-		padding-bottom: 8rem;
+		padding-bottom: 10rem;
 		& div.contenedor{
 			@extend .contenedor;
 			display: flex;
