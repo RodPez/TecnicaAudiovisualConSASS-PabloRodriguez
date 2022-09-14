@@ -112,8 +112,8 @@ main {
       main.gridMain div.contenedor h1.contenedor__titulo {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         letter-spacing: 0.2rem;
         font-size: 2.5rem;
@@ -127,8 +127,8 @@ main {
       main.gridMain div.contenedor p.contenedor__texto {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         line-height: 2rem;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 1.5rem;
@@ -150,8 +150,8 @@ main {
       grid-area: titulo;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       align-items: flex-start;
       width: 100%;
       padding: 0.85rem; }
@@ -182,8 +182,9 @@ main {
         margin: 0.5rem; }
     main.gridMain div.formulario {
       display: flex;
-      flex-wrap: row wrap;
+      flex-direction: row;
       justify-content: center;
+      flex-wrap: wrap;
       align-items: center; }
       main.gridMain div.formulario label.contenedor__etiqueta {
         font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
@@ -242,8 +243,8 @@ main {
       main.gridMainColumna div.contenidoDerecho h1.contenedor__titulo {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         letter-spacing: 0.2rem;
         font-size: 2.5rem;
@@ -255,8 +256,8 @@ main {
       main.gridMainColumna div.contenidoDerecho p.contenedor__texto {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         line-height: 2rem;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 1.5rem;
@@ -278,8 +279,8 @@ main {
       main.gridPortfolio div.contenedor h1.contenedor__titulo {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         letter-spacing: 0.2rem;
         font-size: 2.5rem;
@@ -317,8 +318,8 @@ main {
         main.gridPortfolio div.textoPortfolio.contenedor p.contenedor__texto {
           display: flex;
           flex-direction: row;
-          flex-wrap: wrap;
           justify-content: center;
+          flex-wrap: wrap;
           line-height: 2rem;
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 1.5rem;
