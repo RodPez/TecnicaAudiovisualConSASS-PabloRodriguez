@@ -13,6 +13,7 @@ $estiloBtn: (
 
 main {
 	grid-area: main;
+	min-height: 80vh;
 	&.gridMain{
 		display: grid;
 		grid-template-columns: 1fr;
@@ -21,7 +22,6 @@ main {
 		"imagen" 
 		"titulo" 
 		"texto";
-		padding-bottom: 10rem;
 		& div.contenedor{
 			@extend .contenedor;
 			display: flex;

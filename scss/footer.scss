@@ -5,9 +5,6 @@ footer{
 	height: 7.5rem;
 	border-top: solid 0.5rem $letrasYBordes;
 	margin-top: 2rem;
-	position: fixed;
-	bottom: 0;
-	left:0;
 	&.gridFooter{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
