@@ -67,7 +67,7 @@ main {
 		& div.titulo-reseñas{
 			grid-area: imagen;
 			@include flexRowCenter;
-			align-items: flex-start;
+			align-items: center;
 			text-align: center;
 			width: 100%;
  		}
